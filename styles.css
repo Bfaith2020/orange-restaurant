@@ -1,4 +1,4 @@
-/* Reset for better consistency across browsers */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,11 +6,11 @@
     scroll-behavior: smooth;
 }
 
-/* Main navigation styling */
+
 .main-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Properly distribute content */
+    justify-content: space-between; 
     background-color: black;
     padding: 10px 50px;
     height: 80px;
@@ -20,16 +20,16 @@
     z-index: 10;
 }
 
-/* Logo Styling */
+
 .logo img {
-    width: 60px; /* Adjusted size for better visibility */
+    width: 60px; 
     height: 60px;
     cursor: pointer;
     transform: translateX(-20px);
     
 }
 
-/* Restaurant Name Styling */
+
 .r-name {
     color: cornsilk;
     text-align: center;
@@ -48,7 +48,7 @@
     padding-top: 5px;
 }
 
-/* Navigation Items */
+
 nav {
     display: flex;
     align-items: center;
@@ -60,10 +60,10 @@ nav {
     color: cornsilk;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    transition: all 0.3s ease-in-out; 
     padding: 5px 10px;
     text-decoration: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
 }
 .nav-item :nth-child(1){
 
@@ -73,10 +73,10 @@ nav {
 .nav-item:hover {
     background-color: chocolate;
     color: black;
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1); 
 }
 
-/* Background Styling */
+
 .background-style {
     background-image: url('./asset/b2.jpg'); /* Ensure path is correct */
     background-position: center;
@@ -89,7 +89,7 @@ nav {
 }
 
 
-/* Responsive Design for Mobile Screens */
+
 @media screen and (max-width: 768px) {
     .main-nav {
         flex-direction: column;
@@ -121,7 +121,7 @@ nav {
     }
 }
 #welcome {
-    background-image: url('path-to-your-image.jpg'); /* Add a background image */
+    background-image: url('path-to-your-image.jpg'); 
     background-size: cover;
     background-position: center;
     color: cornsilk;
@@ -182,18 +182,60 @@ nav {
  .welcome-container .btn:hover {
     background-color: darkorange;
  }
- 
- .about-us-container{
-    
-    
- }
 
- .last-p{
-    height: 50rem;
-    width: 45rem;
-    text-align: center;
-    font-size: x-large;
-    padding: 20px;
-    
-    
- }
+.last-p-container {
+    background-image: url();
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 40px 0;
+    position: relative;
+    bottom: 10rem;
+    ;
+}
+
+.last-p {
+    background-color: rgba(0, 0, 0, 0.8); 
+    width: 60%;
+    padding: 20px 30px;
+    border-radius: 15px; /* Smooth corners */
+    box-shadow: 0px 8px 15px rgba(255, 98, 0, 0.4); /* Orange shadow */
+    color: cornsilk;
+    font-size: 1.2rem;
+    line-height: 1.6; 
+    text-align: justify; 
+    position: relative; /* For smoke positioning */
+    z-index: 2;
+}
+
+
+.smoke {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 70%);
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    border-radius: 50%;
+    z-index: 1;
+    animation: rise 6s infinite ease-in-out;
+}
+
+
+@keyframes rise {
+    0% {
+        transform: translate(0, 0) scale(0.8);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translate(0, -200px) scale(1.5);
+        opacity: 0;
+    }
+}
