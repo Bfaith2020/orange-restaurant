@@ -1,6 +1,6 @@
 # Orange Restaurant
 
-Welcome to the Orange Restaurant project! This is a website for a fictional restaurant located in Pretoria, showcasing a blend of exquisite flavors and a warm ambiance.
+Welcome to the Orange Restaurant project! This is a website for a  restaurant located in Pretoria, showcasing a blend of exquisite flavors and a warm ambiance.
 link: https://endearing-babka-2accd7.netlify.app/
 ## Features
 
