@@ -8,11 +8,11 @@
 </head>
 <body>
   <header>
-    <h1>Our Menu</h1>
+    <h1> Welcome to Our Menu</h1> <!--Title of the menu page-->
   </header>
 
   <main>
-    <section class="menu-section">
+    <section class="menu-section">    <!--to link appetizers in menu dropdown to appetizers in the actual menu-->
       <div class="menu">
         <h2>Appetizers</h2>
         <ul>
@@ -22,53 +22,57 @@
         </ul>
       </div>
       <div class="image-container">
-        <img src="../asset/menu/b1.jpg" alt="Appetizers">
+        <img src="/asset/drink1.jpg" alt="Appetizers">
       </div>
     </section>
 
-    <section class="menu-section">
-      <div class="menu">
-        <h2>Main Courses</h2>
-        <ul>
-          <li>Grilled Salmon - R..</li>
-          <li>Steak with Fries - R..</li>
-          <li>Vegan Burger - R..</li>
-        </ul>
-      </div>
-      <div class="image-container">
-        <img src="../asset/menu/b3.jpg" alt="Main Courses">
-      </div>
-    </section>
+    <section class="menu-section" id="main courses">
+    <div class="menu">     <!--to link main courses in menu dropdown to main courses in the actual menu-->
+    <h2>Main Courses</h2>
+    <ul>
+      <li>Grilled Salmon - R..</li>
+      <li>Steak with Fries - R..</li>
+      <li>Vegan Burger - R..</li>
+    </ul>
+    </div>
+    <div class="image-container">  <!--targets the image in the main course section of menu-->
+    <img src="/asset/menu/b1.jpg" alt="Main Courses">
+  </div>
+  </section>
 
-    <section class="menu-section">
+  
+  
+  <section class="menu-section" id="desserts"> <!--to link desserts in menu dropdown to desserts in the actual menu-->
+    <div class="menu">
+      <h2>Desserts</h2>
+      <ul>
+        <li>Chocolate Lava Cake - R..</li>
+        <li>Fruit Salad - R..</li>
+        <li>Donuts - R..</li>
+      </ul>
+    </div>
+    <div class="image-container"> <!--Image shown in main menu when you click on the desserts in dropdown-->
+      <img src="../asset/menu/d1.jpg" alt="Desserts">
+    </div>
+  </section>
+  
+    <section class="menu-section" id ="Kids' Menu">  <!--to link kids' menu in menu dropdown to kids' menu in the actual menu-->
       <div class="menu">
-        <h2>Desserts</h2>
+        <h2> kids' menu</h2>
         <ul>
-          <li>Chocolate Lava Cake - R..</li>
-          <li>Fruit Salad - R..</li>
-          <li>Orange Sorbet - R..</li>
-        </ul>
+           <li>Mini Pizza - R..</li>
+            <li> Burgers</li>
+            <li>Mini Burgers</li>
+            <li>Chicken Nuggets - R..</li>
+            <li>Ice Cream Scoop - R..</li>
+          </ul>
       </div>
-      <div class="image-container">
-        <img src="../asset/menu/d1.jpg" alt="Desserts">
-      </div>
-    </section>
-
-    <section class="menu-section">
-      <div class="menu">
-        <h2>Kids Menu</h2>
-        <ul>
-          <li>Mini Pizza - R..</li>
-          <li>Chicken Nuggets - R..</li>
-          <li>Ice Cream Scoop - R..</li>
-        </ul>
-      </div>
-      <div class="image-container">
-        <img src="../asset/menu/t1.jpg" alt="Kids Menu">
+      <div class="image-container"> 
+        <img src="/asset/d4.jpg" alt="Kids Menu">  <!--Image shown in main menu when you click on the kids menu in dropdown-->
       </div>
     </section>
   </main>
 
-  <script src="./menu-scrips.js"></script>
+<script src="./menu-scripts.js"></script> <!--linking the javascript file to the menu page-->
 </body>
 </html>

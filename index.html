@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange restaurant</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="/asset/Screenshot (3).png">
-    <script src="animation.js"></script>
+    <link rel="stylesheet" href="./dropdown.css">
+    <link rel="shortcut icon" href="/asset/Screenshot (3).png">  <!--favicon-->
+    
 </head>
 
 
@@ -15,33 +16,48 @@
  
 
   <div class="main-nav">
-    <div class="logo"><img src="./asset/Screenshot (3).png" alt="logo"></div>
+    <div class="logo"><img src="./asset/Screenshot (3).png" alt="logo"></div> <!--logo image-->
     
-    <div class="r-name">
+    <div class="r-name"> <!--Restaurant name displayed next to logo-->
     
       <h1 id="r-big">ORANGE</h1>
       <p id="r-small">RESTRAUNT</p>
   
     </div>
   
-    <nav>
-      <span class="nav-item"> <a href="./index.html"> Home</a></span>
-      <span class="nav-item"><a href="#welcome"> About Us</a></span>
-      <span class="nav-item"> <a href="./web-pages/Menu.html" target="_blank">Menu</a></span>
-      <span class="nav-item"> Order Online </span>
-      <span class="nav-item"> <a href="https://www.instagram.com/orange_restaurant_pta/" target="_blank">Contact</a></span>
-      <span class="logo"></span>
+    <nav>  <!-- items in navigation bar-->
+      <nav>
+        <span class="nav-item"> <a href="./index.html"> Home</a></span>
+        <span class="nav-item"><a href="#welcome"> About Us</a></span>
+
+        <span class="nav-item dropdown">            <!--dropdown menu linking to main menu-->
+          <a href="#" class="dropbtn">Menu </a> 
+          <div class="dropdown-content">
+            <a href="./web-pages/Menu.html#appetizers">Appetizers</a>
+            <a href="./web-pages/Menu.html#main-courses">Main Courses</a>
+            <a href="./web-pages/Menu.html#desserts">Desserts</a>
+            <a href="./web-pages/Menu.html#kids-menu">Kids Menu</a>
+          </div>
+        </span>
+
+        <span class="nav-item"> <a href="https://www.instagram.com/orange_restaurant_pta/" target="_blank">Contact</a></span>
+        <span class="logo"></span>
+      </nav>
    </nav>
     
 </div>
-  <div class="background-style">
+  <div class="background-style"> <!--background image-->
+    <section class="carousel-container"></section> <!--carousel showing food images-->
+
+
+
 
    <main>
 
    </main>
 
 </div>
-<section id="welcome">
+<section id="welcome">  <!--welcome message on about us section after carousel-->
   <section class="welcome-container">
      <h1><strong>Welcome to Orange Restaurant</strong></h1>
      <p>
@@ -51,7 +67,7 @@
     </section>
   </div>
 
-  <div class="last-p-container">
+  <div class="last-p-container"> <!--paragraph section after about us section-->
     <div class="last-p">
         At Orange Restaurant, we’re passionate about creating experiences that go beyond great food. Our carefully curated menu showcases a fusion of bold flavors and innovative dishes, crafted using the freshest, highest-quality ingredients. Whether you're a fan of comforting classics or eager to explore new and exciting tastes, our menu offers something for everyone.
         <br><br>
@@ -60,7 +76,8 @@
 </div>
 
 
-<script src="./scrips.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 
 </html>

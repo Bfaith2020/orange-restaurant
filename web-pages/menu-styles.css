@@ -6,20 +6,35 @@ body {
     color: #fff;
   }
   
-  header {
-    background-color: rgba(255, 98, 0, 0.1);
+  header {          /*message for welcome to our menu*/
+    background-color: #000;
     text-align: center;
     padding: 1rem 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ff6200; 
+ }
+  /* Define the animation that fades in and slides the text down */
+@keyframes fadeSlideIn {
+  0% { 
+      opacity: 0; /* Start completely transparent */
+      transform: translateY(-50px); /* Move the text 50px above its original position */
   }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+  100% { 
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move back to the original position */
   }
-  
-  main {
+}
+
+/* Apply the animation to the heading inside the header */
+header h1 {
+  animation: fadeSlideIn 1.5s ease-out; /* Runs for 1.5 seconds with a smooth easing */
+}
+
+  main {       /*targets main courses on the menu*/     
     padding: 2rem;
-  }
+    
+    
+  } 
   
   .menu-section {
     display: flex;
@@ -31,9 +46,9 @@ body {
     border: 2px solid #FF6200;
     border-radius: 15px;
     overflow: hidden;
-    background: rgba(255, 98, 0, 0.1);
+    background: black; /*background color for the boxes in which the menu is contained*/
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    opacity: 0;
+    opacity: 5;
     transform: translateY(50px);
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
@@ -43,8 +58,8 @@ body {
     transform: translateY(0);
   }
   
-  .menu {
-    width: 45%; 
+  .menu { /* appettizers and desserts*/
+       width: 150%; 
     padding: 1rem;
   }
   
@@ -53,11 +68,7 @@ body {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    padding: 0;
+    display:flex;
   }
   
   .menu li {
@@ -65,42 +76,17 @@ body {
     font-size: 1.1rem;
   }
   
-  .image-container {
+  .image-container { /*image container for all items*/
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .image-container img {
-    width: 100%;
+  .image-container img { /*image container to resize, directly affects all images */
+    width: 150%;
     height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+    justify-content: center;
+    align-items:flex-end;
   }
-  
-  .smoke {
-    position: absolute;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 20%, transparent 70%);
-    width: 30px;
-    height: 30px;
-    opacity: 0;
-    border-radius: 50%;
-    z-index: 1;
-    animation: rise 6s infinite ease-in-out;
-}
 
-
-@keyframes rise {
-    0% {
-        transform: translate(0, 0) scale(0.8);
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.6;
-    }
-    100% {
-        transform: translate(0, -200px) scale(1.5);
-        opacity: 0;
-    }
-}
